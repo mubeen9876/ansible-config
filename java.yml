@@ -1,0 +1,9 @@
+---
+- hosts: mubeen@10.142.0.9
+  tasks:
+  - name: Set-up java
+    yum:
+      name: java
+      state: latest
+    become: true
+...
